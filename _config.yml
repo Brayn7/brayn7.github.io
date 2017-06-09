@@ -12,16 +12,16 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: http://brayn7.github.io/
-baseurl: http://brayn7.github.io/
+baseurl: 
 title: Robert Bryan
 author: Robert Bryan
 description: Personal blog and resume
 avatar: profile.png
-email: yourname@email.com
-github: biomadeira/sustain # username
+email: bryarobert@gmail.com
+github: brayn7 # username
 twitter: username
-linkedin: username
-stackoverflow: username   #e.g: users/2735833/proton1h1
+linkedin: robbie-bryan-5b81b732/
+stackoverflow: users/5549090/brayn7   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
 disqus: username
 google_analytics: UA-69391421-1
