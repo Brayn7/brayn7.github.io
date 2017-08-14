@@ -11,8 +11,8 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://brayn7.github.io/
-baseurl: 
+url: /
+baseurl: /
 title: Robert Bryan
 author: Robert Bryan
 description: Personal blog and resume
