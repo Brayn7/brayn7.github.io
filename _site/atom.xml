@@ -6,12 +6,12 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2017-08-31T15:51:05Z</updated>
+  <updated>2020-09-20T13:16:42Z</updated>
   <author>
     <name>Robert Bryan</name>
-    <email>bryarobert@gmail.com</email>
+    <email>robert.bell.bryan@gmail.com</email>
   </author>
-  <rights type="text">Copyright © 2017 Robert Bryan. All rights reserved.</rights>
+  <rights type="text">Copyright © 2020 Robert Bryan. All rights reserved.</rights>
   
   <entry>
   <title type="text">A Simple Push Menu</title>
@@ -33,36 +33,35 @@
 
 <p>I figured I would have a main div with two children in it. One for the menu itself and the other for my content.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;title&gt;</span>Simple Push Menu<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"./style.css"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-wrapper d-inline-block text-center"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- menu --&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Simple Push Menu&lt;/title&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+  &lt;link rel="stylesheet" href="./style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="main-container"&gt;
+    &lt;div class="nav-wrapper d-inline-block text-center"&gt;
+    &lt;!-- menu --&gt;
+    &lt;/div&gt;
       
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
-      <span class="c">&lt;!-- content --&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+    &lt;div class="wrapper"&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
 <p>note: I used Bootstrap 4 just to make my life easier which you can take it or leave it.</p>
 
 <p>In the menu area I knew I wanted a place for a logo/brand and some menu items</p>
 
 <h2 id="menu-content">Menu Content</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="brand mt-3"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="brand mt-3"&gt;
       &lt;h2&gt;Brand&lt;/h2&gt;
 &lt;/div&gt;
     &lt;ul class="nav flex-column mt-4"&gt;
@@ -76,8 +75,7 @@
         &lt;a class="nav-link" href="#section_3"&gt;Section 3&lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>note: I basically copy pasted the ul nav from the <a href="https://getbootstrap.com/docs/4.0/components/navs/">bootstrap 4 website</a></p>
 
 <p>Now I know I want a menu button, an overlay and some content.
@@ -87,26 +85,24 @@ So in the .wrapper div where my content is going I put…</p>
 
 <p>my menu button…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;button id="menu-btn" class="nav-btn btn btn-sm btn-outline-primary m-2 ml-2 border-0"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button id="menu-btn" class="nav-btn btn btn-sm btn-outline-primary m-2 ml-2 border-0"&gt;
       &lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;
 &lt;/button&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>note: menu icon is from <a href="http://fontawesome.io/">font-awesome</a>.</p>
 
 <h2 id="overlay">Overlay</h2>
 
 <p>here is a hard one…the overlay.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="overlay"&gt;&lt;/div&gt;
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="overlay"&gt;&lt;/div&gt;
+</code></pre></div></div>
 
 <h2 id="content">Content</h2>
 
 <p>Let’s pop some content in the and spice it up with <a href="http://vlad-saling.github.io/star-trek-ipsum/">Star Trek Ipsum</a></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="container-fluid col-10 mx-auto"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="container-fluid col-10 mx-auto"&gt;
       &lt;div class="row"&gt;
       &lt;div class="col my-4"&gt;
         &lt;h1 class="display-4"&gt;Simple Push Menu&lt;/h1&gt;
@@ -138,8 +134,7 @@ So in the .wrapper div where my content is going I put…</p>
         &lt;/div&gt;    
       &lt;/div&gt;
     &lt;/div&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h1 id="the-css-sass">The CSS (Sass)</h1>
 
@@ -147,7 +142,7 @@ So in the .wrapper div where my content is going I put…</p>
 
 <p>Let’s Get That Menu off the screen!</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.nav-wrapper {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nav-wrapper {
   width: 220px; // 220px seems to be a good size from other examples I have looked at.
   background: #333;
   color: white;
@@ -156,14 +151,13 @@ So in the .wrapper div where my content is going I put…</p>
   left: -220px; // this pushes the menu off the screen equal to its width
   transition: left 1s; // this transitions the menu back off the screen when closing
   } // .nav-wrapper
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You should have the menu off the screen. You could go to the inspector and give the .nav-wrapper left: 0; and see it pop in.</p>
 
 <p>Now lets style the list a little bit.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.nav-wrapper {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nav-wrapper {
   width: 220px;
   background: #333;
   color: white;
@@ -193,15 +187,14 @@ So in the .wrapper div where my content is going I put…</p>
   } // end ul
   
 } // .nav-wrapper
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>note: I am using sass and one nice thing sass lets you do is nest you css selectors. See how I have my ul inside my .nav-wrapper, and my li inside my ul.</p>
 
 <h2 id="wrapper-styling">.wrapper Styling</h2>
 
 <p>fairly straight forward</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.wrapper {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.wrapper {
   position: relative; // you need this for transition
   left: 0; // and this too
   transition: left 1s;
@@ -213,14 +206,13 @@ So in the .wrapper div where my content is going I put…</p>
     z-index: 2000;
   }// end .nav-btn
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="push">PUSH!</h2>
 
 <p>we will add the push class to the body with javascript and then all this will fall into place.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// css to push the nav and content over
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// css to push the nav and content over
 .push {
   
   overflow:hidden;
@@ -249,8 +241,7 @@ So in the .wrapper div where my content is going I put…</p>
   }
   
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h1 id="the-javascript">The Javascript</h1>
 
@@ -258,20 +249,15 @@ So in the .wrapper div where my content is going I put…</p>
 Just get the button with the id name and add a event listener to it.
 Then we use a ternary ((condition) ? /* what happens if condition is true <em>/ : /</em> what happens if condition is false */) to add the class ‘push’ to the body if it dosn’t already have it, and remove ‘push’ if does.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// on click add and remove class from body.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// on click add and remove class from body.
 document.getElementById('menu-btn').addEventListener('click', (()=&gt;{
   let $body = document.body;
   // if body has the class push then remove it, otherwise add it
   $body.getAttribute('class') === "push" ? $body.classList.remove('push') : $body.classList.add('push');
 }));
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>That’s it hope you find this handy.</p>
-
-<ul>
-  <li>Robbie</li>
-</ul>
 
  ]]></content>
 </entry>

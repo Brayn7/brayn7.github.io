@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <meta name="author" content="Robert Bryan" />
-    <meta name="description" content="Personal blog and resume">
-    <link rel="favicon" href="static/img/favicon.ico">
+    <meta name="description" content="Portfolio and resume">
+    <link rel="favicon" href="/static/img/favicon.ico">
 
     
       <title>Projects</title>
@@ -25,10 +25,10 @@
     <![endif]-->
 
 	<!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/syntax.css" />
 
     <!-- Google Analytics -->
     <script>
@@ -54,35 +54,89 @@
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
+<!--        <li><a href="/blog.html">BLOG</a></li>-->
+        <li><a href="/projects.html">PROJECTS</a></li>
         <li><a href="http://brayn7.github.io/resume">RESUME</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-     <section id="projects">
+
+    <section id="professional-projects">
+	<div class="container">
+		<h3>Professional Projects</h3>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4>Able Engine <small><i>2017-present</i></small></h4>
+				<hr>
+				<h5>
+					<i class="fa fa-drupal"></i>&nbsp;&nbsp;<strong><a target="_blank" href="http://alltech.com/">Alltech</a> - </strong>
+					Alltech is a large multilingual Drupal 8 site. I maintain this site and provide new features and improvements.
+					<ul>
+						<li>Implementation of the batch api for duplicating content, blocks, taxonomies, and terms for new languages</li>
+						<li>Custom module to provide a vast array of blocks for layout out content</li>
+					</ul>
+				</h5>
+				<h5>
+					<i class="fa fa-drupal"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://dealers.alltech.com/">Alltech Dealer Portal</a> - </strong>
+					The Dealer Portal (Drupal 8) provides a way for "dealers" to order materials to help them sell products. I build this project from the ground up and implemented all features.
+					<ul>
+						<li>Customizable pdfs via Pdf field detection and custom pdf form generation for users to input text and images to be placed in the pdf</li>
+						<li>Csv script for importing data that keeps track of users sales and points.</li>
+					</ul>
+				</h5>
+				<h5>
+					<i class="fa fa-drupal"></i>&nbsp;&nbsp;<strong>Informed Sites (has not launched) - </strong>
+					This project is actually a collection of 5 websites built on Drupal 8 all leveraging one upstream. I was the sole developer of this project.
+					<ul>
+						<li>Integrations to layout builder to allow for flexibility and customization across all sites and provide a way to create "global layouts"</li>
+						<li>Custom settings for generation of pdfs, and controlling sites appearance</li>
+						<li>Csv manipulation, data merging, generation, and data importing for managing "batches"</li>
+					</ul>
+				</h5>
+				<h5>
+					<i class="fa fa-drupal"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://www.fnbky.com/">Farmers National Bank</a> - </strong>
+					Farmers National Bank is a small bank website built on Drupal 8.
+				</h5>
+				<h5>
+					<i class="fa fa-wordpress"></i>&nbsp;&nbsp;<strong>Casino Platform  - </strong>
+					A custom wordpress theme and plugin used on a multitude of sites to provide one code base for updates and functionality. 
+				</h5>
+				<h5>
+					<i class="fa fa-wordpress"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://www.executrain.com/">ExecuTrain</a> - </strong>
+					A wordpress site where users can browse a list of available courses and sign a person or group up to attend.
+					<ul>
+						<li>Customized Woocommerce integration</li>
+						<li>React Based reporting and analytics</li>
+					</ul>
+				</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="projects">
 <div class="container">
-  <h3>Projects</h3>
+  <h3>Personal Projects</h3>
   <div class="panel panel-default">
     <div class="panel-body">
     <h5>
-      <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://secret-taiga-87353.herokuapp.com/">Name-Spy</a></strong>
-      A web application for non-profits to make automatic inquiries on a specially designated nationals list. Built with Laravel, Vue.js, and deplyed on heroku.
+      <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://secret-taiga-87353.herokuapp.com/">Name-Spy</a> - </strong>
+      A web application for non-profits to make automatic inquiries on a specially designated nationals list. Built with Laravel, Vue.js, and deployed on heroku.
     </h5>
 		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="Memory-Game">Memory Game</a></strong>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="/Memory-Game">Memory Game</a> - </strong>
 			A Memory Game built with AngularJS.
 		</h5>
 		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="calculator">Calulator</a></strong>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="/calculator">Calulator</a> - </strong>
 			A basic calculator built with simple HTML CSS & JS.
 		</h5>
-    	<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="wiki-viewer">Wiki-Viewer</a></strong>
-			Wiki-viewer is an experiment in utilizing an API.
-		</h5>
+<!--    	<h5>-->
+<!--			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="/wiki-viewer">Wiki-Viewer</a> - </strong>-->
+<!--			Wiki-viewer is an experiment in utilizing an API.-->
+<!--		</h5>-->
     </div>
   </div>
 </div>
@@ -110,9 +164,9 @@
     integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="static/js/docs.min.js"></script>
-    <script src="static/js/main.js"></script>
+	<script src="/static/js/docs.min.js"></script>
+    <script src="/static/js/main.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
